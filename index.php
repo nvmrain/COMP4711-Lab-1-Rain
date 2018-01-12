@@ -10,6 +10,7 @@
 
 	$students = array();
 	
+	// create a new student instance 'John Doe'
 	$first = new Student();
 	$first->surname = "Doe";
 	$first->first_name = "John";
@@ -20,6 +21,7 @@
 	$first->add_grade(55);
 	$students['j123'] = $first;
 
+	// create a new student instance 'Einstein Albert'
 	$second = new Student();
 	$second->surname = "Einstein";
 	$second->first_name = "Albert";
@@ -31,11 +33,14 @@
 	$second->add_grade(50);
 	$students['a456'] = $second;
 
+	// create a new student instance 'Xiaoyu Ye'
 	$third = new Student();
-	$third->surname = "Parry";
-	$third->first_name = "Jim";
-	$third->add_email('work', 'jim_parry@bcit.ca');
-	$third->add_grade(85);
+	$third->surname = "Xiaoyu";
+	$third->first_name = "Ye";
+	$third->add_email('home', 'yxy123yu@gmail.com');
+	$third->add_grade(100);
+	$third->add_grade(100);
+	$third->add_grade(100);
 	$students['a00985520'] = $third;
 
 	ksort($students);
