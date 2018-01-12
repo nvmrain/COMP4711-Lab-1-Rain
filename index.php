@@ -31,6 +31,15 @@
 	$second->add_grade(50);
 	$students['a456'] = $second;
 
+	$third = new Student();
+	$third->surname = "Parry";
+	$third->first_name = "Jim";
+	$third->add_email('work', 'jim_parry@bcit.ca');
+	$third->add_grade(85);
+	$students['a00985520'] = $third;
+
+	ksort($students);
+
 	foreach($students as $student)
 	    echo $student->toString();	
 
